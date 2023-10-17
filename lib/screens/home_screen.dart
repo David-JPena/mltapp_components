@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder:(context, index) => ListTile(
           leading: const Icon(Icons.app_settings_alt, color: Colors.indigoAccent,),
           title: const Text('Items'),
-          trailing: const Icon(Icons.circle_notifications_sharp, color: Colors.indigoAccent),
+          trailing: const Icon(Icons.circle_notifications_sharp, color: Colors.indigo),
           onTap: () {
           
           },
