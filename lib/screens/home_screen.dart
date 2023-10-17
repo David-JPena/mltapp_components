@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView.separated(
         itemBuilder:(context, index) => ListTile(
           leading: const Icon(Icons.app_settings_alt, color: Colors.indigoAccent,),
-          title: const Text('Items'),
+          title: const Text('Opciones'),
           trailing: const Icon(Icons.circle_notifications_sharp, color: Colors.indigo),
           onTap: () {
           
