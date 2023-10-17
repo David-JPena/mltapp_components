@@ -21,8 +21,8 @@ class ListView2Screen extends StatelessWidget {
             title: Text(opciones[index]),
             trailing: const Icon(Icons.music_note_outlined, color:Color.fromARGB(255, 136, 15, 78)),
             onTap: () {
-              final opt = opciones[index];
-              print(opt);
+              //final opt = opciones[index];
+              //print(opt);
             },
           ), 
         separatorBuilder:(context, index) => const Divider(), 
