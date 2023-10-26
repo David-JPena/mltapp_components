@@ -46,21 +46,21 @@ class AvatarScreen extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: circleRadius / 2),
                               const Text(
-                                'Maria Elliot',
+                                'David Jimenez',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 34.0,
                                 ),
                               ),
                               const Text(
-                                'Albany, New York',
+                                'Desarrollador, Flutter',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16.0,
                                   color: Colors.lightBlueAccent,
                                 ),
                               ),
-                              SizedBox(height: 20.0),
+                              const SizedBox(height: 20.0),
                               Padding(
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 32.0),
@@ -73,7 +73,7 @@ class AvatarScreen extends StatelessWidget {
                                         color: Colors.black,
                                       ),
                                     ),
-                                    SizedBox(height: 20.0), // Agrega espacio entre la descripción y los iconos
+                                    const SizedBox(height: 20.0), // Agrega espacio entre la descripción y los iconos
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
