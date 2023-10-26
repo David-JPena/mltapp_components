@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginScreen> {
       padding: const EdgeInsets.all(20.0),
       child: Center(
         child: Card(
-          elevation: 5, // Agrega una sombra a la card
+          elevation: 5, 
           child: Container(
             padding: const EdgeInsets.all(20.0),
             child: Column(

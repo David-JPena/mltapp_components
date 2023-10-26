@@ -4,15 +4,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class AvatarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double circleRadius = 120.0; // Define el radio del círculo
+    double circleRadius = 120.0; 
 
     return Scaffold(
       backgroundColor: const Color(0xffE0E0E0),
       appBar: AppBar(
-        title: const Text('Avatar Screen'), // Agrega el encabezado aquí
+        title: const Text('Avatar Screen'), 
       ),
       body: Center(
-        // Centra la tarjeta y la descripción
+        
         child: Container(
           height: double.infinity,
           width: double.infinity,
@@ -26,7 +26,7 @@ class AvatarScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: circleRadius / 2.0),
                       child: Container(
-                        height: 400.0, // Aumenta el tamaño de la tarjeta
+                        height: 400.0, 
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
                           color: Colors.white,
@@ -75,7 +75,7 @@ class AvatarScreen extends StatelessWidget {
                                     ),
                                     const SizedBox(
                                         height:
-                                            20.0), // Agrega espacio entre la descripción y los iconos
+                                            20.0), 
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
@@ -99,12 +99,12 @@ class AvatarScreen extends StatelessWidget {
                                             ),
                                             const SizedBox(
                                                 height:
-                                                    12.0), // Aumenta la separación inferior
+                                                    12.0), 
                                             const Text(
                                               'Me gusta',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0, 
                                                 color: Colors.black54,
                                               ),
                                             ),
@@ -112,7 +112,7 @@ class AvatarScreen extends StatelessWidget {
                                               '12K',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0,
                                                 color: Colors.black87,
                                               ),
                                             ),
@@ -137,12 +137,12 @@ class AvatarScreen extends StatelessWidget {
                                             ),
                                             const SizedBox(
                                                 height:
-                                                    12.0), // Aumenta la separación inferior
+                                                    12.0), 
                                             const Text(
                                               'Proyectos',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0, 
                                                 color: Colors.black54,
                                               ),
                                             ),
@@ -150,7 +150,7 @@ class AvatarScreen extends StatelessWidget {
                                               '12',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0, 
                                                 color: Colors.black87,
                                               ),
                                             ),
@@ -175,12 +175,12 @@ class AvatarScreen extends StatelessWidget {
                                             ),
                                             const SizedBox(
                                                 height:
-                                                    12.0), // Aumenta la separación inferior
+                                                    12.0), 
                                             const Text(
                                               'Contactos',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0, 
                                                 color: Colors.black54,
                                               ),
                                             ),
@@ -188,7 +188,7 @@ class AvatarScreen extends StatelessWidget {
                                               '122',
                                               style: TextStyle(
                                                 fontSize:
-                                                    16.0, // Tamaño de fuente más pequeño
+                                                    16.0, 
                                                 color: Colors.black87,
                                               ),
                                             ),
