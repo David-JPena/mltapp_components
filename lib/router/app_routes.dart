@@ -1,4 +1,3 @@
-import 'package:fl_components/screens/avatar_screen.dart';
 import 'package:fl_components/screens/login_screnn.dart';
 import 'package:fl_components/screens/screens.dart';
 import 'package:flutter/material.dart';

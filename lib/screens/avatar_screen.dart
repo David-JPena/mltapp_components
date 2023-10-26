@@ -6,10 +6,10 @@ class AvatarScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     double circleRadius = 120.0; // Define el radio del círculo
 
-    return Scaffold(
-      backgroundColor: Color(0xffE0E0E0),
+    return  Scaffold(
+      backgroundColor:const Color(0xffE0E0E0),
       appBar: AppBar(
-        title: Text('Avatar Screen'), // Agrega el encabezado aquí
+        title: const Text('Avatar Screen'), // Agrega el encabezado aquí
       ),
       body: Center(
         // Centra la tarjeta y la descripción
@@ -34,7 +34,7 @@ class AvatarScreen extends StatelessWidget {
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
                               blurRadius: 8.0,
-                              offset: Offset(0.0, 5.0),
+                              offset:const  Offset(0.0, 5.0),
                             ),
                           ],
                         ),
@@ -45,14 +45,14 @@ class AvatarScreen extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               SizedBox(height: circleRadius / 2),
-                              Text(
+                              const Text(
                                 'Maria Elliot',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 34.0,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 'Albany, New York',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -66,7 +66,7 @@ class AvatarScreen extends StatelessWidget {
                                     horizontal: 32.0),
                                 child: Column(
                                   children: <Widget>[
-                                    Text(
+                                   const  Text(
                                       'Esta es la descripción del usuario. Puedes agregar información adicional aquí.',
                                       style: TextStyle(
                                         fontSize: 16.0,
@@ -82,11 +82,11 @@ class AvatarScreen extends StatelessWidget {
                                             Container(
                                               width: 48,
                                               height: 48,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.blue,
                                               ),
-                                              child: Center(
+                                              child: const Center(
                                                 child: FaIcon(
                                                   FontAwesomeIcons.twitter,
                                                   size: 24,
@@ -94,16 +94,16 @@ class AvatarScreen extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                                 height: 12.0), // Aumenta la separación inferior
-                                            Text(
+                                            const Text(
                                               'Me gusta',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
                                                 color: Colors.black54,
                                               ),
                                             ),
-                                            Text(
+                                           const Text(
                                               '12K',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
@@ -117,11 +117,11 @@ class AvatarScreen extends StatelessWidget {
                                             Container(
                                               width: 48,
                                               height: 48,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.black,
                                               ),
-                                              child: Center(
+                                              child: const  Center(
                                                 child: FaIcon(
                                                   FontAwesomeIcons.github,
                                                   size: 24,
@@ -129,16 +129,16 @@ class AvatarScreen extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            SizedBox(
+                                           const SizedBox(
                                                 height: 12.0), // Aumenta la separación inferior
-                                            Text(
+                                             const Text(
                                               'Proyectos',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
                                                 color: Colors.black54,
                                               ),
                                             ),
-                                            Text(
+                                            const Text(
                                               '12',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
@@ -152,11 +152,11 @@ class AvatarScreen extends StatelessWidget {
                                             Container(
                                               width: 48,
                                               height: 48,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Colors.blue,
                                               ),
-                                              child: Center(
+                                              child: const  Center(
                                                 child: FaIcon(
                                                   FontAwesomeIcons.linkedin,
                                                   size: 24,
@@ -164,16 +164,16 @@ class AvatarScreen extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                                 height: 12.0), // Aumenta la separación inferior
-                                            Text(
+                                            const Text(
                                               'Contactos',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
                                                 color: Colors.black54,
                                               ),
                                             ),
-                                            Text(
+                                            const Text(
                                               '122',
                                               style: TextStyle(
                                                 fontSize: 16.0, // Tamaño de fuente más pequeño
@@ -202,15 +202,15 @@ class AvatarScreen extends StatelessWidget {
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.5),
                             blurRadius: 8.0,
-                            offset: Offset(0.0, 5.0),
+                            offset: const  Offset(0.0, 5.0),
                           ),
                         ],
                       ),
-                      child: Padding(
-                        padding: EdgeInsets.all(4.0),
+                      child:  Padding(
+                        padding: const  EdgeInsets.all(4.0),
                         child: Center(
-                          child: Container(
-                            child: Icon(
+                          child:  Container(
+                            child: const Icon(
                               Icons.person,
                               size: 80,
                             ),
