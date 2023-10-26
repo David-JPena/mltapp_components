@@ -141,7 +141,3 @@ class _LoginPageState extends State<LoginScreen> {
     );
   }
 }
-
-void main() {
-  runApp(MaterialApp(home: LoginScreen()));
-}
