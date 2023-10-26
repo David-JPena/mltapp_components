@@ -1,10 +1,11 @@
+import 'package:fl_components/screens/avatar_screen.dart';
 import 'package:fl_components/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-   const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({Key? key}) : super(key: key);
+
   @override
-  
   State<LoginScreen> createState() => _LoginPageState();
 }
 
@@ -34,7 +35,7 @@ class _LoginPageState extends State<LoginScreen> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:[
+              children: [
                 Stack(
                   alignment: Alignment.center,
                   children: [
@@ -46,7 +47,7 @@ class _LoginPageState extends State<LoginScreen> {
                         shape: BoxShape.circle,
                       ),
                     ),
-                    const Icon (Icons.person, color: AppTheme.primary, size: 40),
+                    const Icon(Icons.person, color: AppTheme.primary, size: 40),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -59,15 +60,15 @@ class _LoginPageState extends State<LoginScreen> {
                 Row(
                   children: [
                     Expanded(
-                      child: _loginBtn("Iniciar Sesión"),
+                      child: _loginBtn("Iniciar Sesión", context),
                     ),
                   ],
                 ),
                 const SizedBox(height: 10),
-                Row  (
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children:  [
-                   const  Text  (
+                  children: [
+                    const Text(
                       "¿No tienes una cuenta? ",
                       style: TextStyle(fontSize: 16, color: Colors.black),
                     ),
@@ -75,7 +76,7 @@ class _LoginPageState extends State<LoginScreen> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child:const  Text(
+                      child: const Text(
                         "Regístrate",
                         style: TextStyle(fontSize: 16, color: Colors.red),
                       ),
@@ -100,7 +101,7 @@ class _LoginPageState extends State<LoginScreen> {
     );
 
     return TextField(
-      style:const  TextStyle(
+      style: const TextStyle(
         color: AppTheme.imputtColor,
       ),
       controller: controller,
@@ -116,24 +117,31 @@ class _LoginPageState extends State<LoginScreen> {
     );
   }
 
-Widget _loginBtn(String text) {
-  return ElevatedButton(
-    onPressed: () {
-      debugPrint("Nombre de Usuario: ${usernameController.text}");
-      debugPrint("Contraseña: ${passwordController.text}");
-      debugPrint("Rol: ${roleController.text}");
+  Widget _loginBtn(String text, BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        debugPrint("Nombre de Usuario: ${usernameController.text}");
+        debugPrint("Contraseña: ${passwordController.text}");
+        debugPrint("Rol: ${roleController.text}");
 
-    },
-    style: AppTheme.loginScreenButtonStyle,
-    child: SizedBox(
-      width: double.infinity,
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 20, color: Colors.white),
+        // Navega a la pantalla de AvatarScreen
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          return AvatarScreen();
+        }));
+      },
+      style: AppTheme.loginScreenButtonStyle,
+      child: SizedBox(
+        width: double.infinity,
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: const TextStyle(fontSize: 20, color: Colors.white),
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
 
+void main() {
+  runApp(MaterialApp(home: LoginScreen()));
 }

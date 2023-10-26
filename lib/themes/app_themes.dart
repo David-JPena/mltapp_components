@@ -6,7 +6,7 @@ class AppTheme {
   static const Color inputBorderColor = Color.fromARGB(255, 242, 247, 252);
   static const Color buttonBackgroundColor = Color.fromARGB(255, 39, 126, 224);
   static const Color buttonTextColor = Colors.blue;
-  static const Color imputtColor = Color.fromRGBO(14, 207, 40, 1);
+  static const Color imputtColor = Colors.blue;
 
   static final ThemeData myTheme = ThemeData(
     primaryColor: primary,
